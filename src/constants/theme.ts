@@ -1,0 +1,71 @@
+export const theme = {
+  colors: {
+    background: '#F5F1E8',
+    backgroundAccent: '#E4F0E8',
+    surface: '#FFFDF8',
+    surfaceStrong: '#F2E9DB',
+    surfaceHighlight: '#E8F2EA',
+    primary: '#2E6B57',
+    primaryHover: '#255646',
+    accent: '#C67C4E',
+    accentSoft: '#F1D9C5',
+    text: '#1E2B24',
+    textSecondary: '#66756D',
+    border: '#D8D1C5',
+    error: '#B94A48',
+    success: '#2F855A',
+    overlay: 'rgba(30, 43, 36, 0.45)',
+    transparent: 'transparent',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 48,
+  },
+  typography: {
+    sizes: {
+      xs: 12,
+      sm: 14,
+      md: 16,
+      lg: 18,
+      xl: 24,
+      xxl: 32,
+    },
+    weights: {
+      regular: '400' as const,
+      semiBold: '600' as const,
+      bold: '700' as const,
+    },
+    fonts: {
+      regular: 'Inter_400Regular',
+      semiBold: 'Inter_600SemiBold',
+      bold: 'Inter_700Bold',
+    }
+  },
+  borderRadius: {
+    sm: 4,
+    md: 8,
+    lg: 16,
+    xl: 24,
+    pill: 9999,
+  },
+  shadows: {
+    dialog: {
+      shadowColor: '#5E5A50',
+      shadowOpacity: 0.12,
+      shadowRadius: 24,
+      shadowOffset: { width: 0, height: 12 },
+      elevation: 8,
+    },
+    soft: {
+      shadowColor: '#6B665C',
+      shadowOpacity: 0.08,
+      shadowRadius: 16,
+      shadowOffset: { width: 0, height: 8 },
+      elevation: 4,
+    },
+  },
+};
