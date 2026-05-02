@@ -8,7 +8,7 @@ HealthPath is a React Native mobile application built with Expo that guides user
 - **Conditional Routing**: Step 4 (Notifications) only appears if time-sensitive goals (e.g., Daily Exercise) are selected in Step 2.
 - **Offline Resilience**: Progress is saved to `AsyncStorage` on every step. Users can resume exactly where they left off even after closing the app.
 - **Firebase Integration**: Automatic background sync to Firestore for remote progress tracking.
-- **Premium UI**: Dark-themed, modern design using HSL tailored colors and smooth transitions with `react-native-reanimated`.
+- **Premium UI**: Modern design using curated colors and smooth transitions with `react-native-reanimated`.
 - **Zero Vulnerabilities**: Secured using NPM overrides to patch nested dependency issues.
 
 ## 🛠️ Tech Stack
@@ -16,7 +16,7 @@ HealthPath is a React Native mobile application built with Expo that guides user
 - **Framework**: Expo (SDK 55)
 - **Language**: TypeScript
 - **State Management**: React Context API + `useReducer`
-- **Navigation**: React Navigation (Stack)
+- **Navigation**: Custom Switch Navigator
 - **Backend**: Firebase Firestore
 - **Persistence**: AsyncStorage
 - **Animations**: React Native Reanimated
@@ -25,7 +25,7 @@ HealthPath is a React Native mobile application built with Expo that guides user
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Prathameshgujjeti/pathflow.git
    cd health-path
    ```
 
@@ -51,7 +51,10 @@ This project uses the `overrides` field in `package.json` to resolve moderate-se
 
 ## 📱 Build for Android (APK)
 
-To generate a testable APK for Android:
+The latest build can be monitored and downloaded from:
+[Expo Build Dashboard](https://expo.dev/accounts/prathameshgujjeti/projects/health-path/builds/2f9ceb6a-1dbb-45cc-925d-44c616e3b11c)
+
+To generate a new APK:
 ```bash
 eas build --platform android --profile preview
 ```
